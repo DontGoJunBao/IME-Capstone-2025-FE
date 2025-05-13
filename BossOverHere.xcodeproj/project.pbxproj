@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E21CE6342DD31D57002C662C /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E21CE6332DD31D57002C662C /* CombineMoya */; };
+		E21CE6362DD31D57002C662C /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E21CE6352DD31D57002C662C /* Moya */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		E21CE60F2DCDC779002C662C /* BossOverHere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BossOverHere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E21CE6362DD31D57002C662C /* Moya in Frameworks */,
+				E21CE6342DD31D57002C662C /* CombineMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,8 @@
 			);
 			name = BossOverHere;
 			packageProductDependencies = (
+				E21CE6332DD31D57002C662C /* CombineMoya */,
+				E21CE6352DD31D57002C662C /* Moya */,
 			);
 			productName = BossOverHere;
 			productReference = E21CE60F2DCDC779002C662C /* BossOverHere.app */;
@@ -94,6 +103,9 @@
 			);
 			mainGroup = E21CE6062DCDC779002C662C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E21CE6322DD31D57002C662C /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E21CE6102DCDC779002C662C /* Products */;
 			projectDirPath = "";
@@ -334,6 +346,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E21CE6322DD31D57002C662C /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E21CE6332DD31D57002C662C /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E21CE6322DD31D57002C662C /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		E21CE6352DD31D57002C662C /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E21CE6322DD31D57002C662C /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E21CE6072DCDC779002C662C /* Project object */;
 }
